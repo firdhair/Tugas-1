@@ -23,13 +23,29 @@
         <input type="text" id="nim" name="nim_mhs" required />
 
         <label for="jenis-kelamin">Jenis Kelamin</label>
+        <label class="radio">
         <input
+          class="radio-satu"
           type="radio"
+          checked="checked"
           id="jenis-kelamin"
           name="jenis_kelamin"
           value="pria"
-        />Pria
-        <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
+        />
+        <span class="checkmark"></span>
+        Pria
+        </label>
+        <label class="radio">
+        <input 
+          class="radio-dua"
+          type="radio" 
+          id="jenis-kelamin" 
+          name="jenis_kelamin" 
+          value="perempuan" 
+        />
+        <span class="checkmark"></span>
+        Perempuan
+        </label>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email_mhs" required />
