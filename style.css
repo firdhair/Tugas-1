@@ -100,6 +100,8 @@
     border: none;
     border-radius: 0.5rem;
     padding-left: 1rem;
+    outline: none;
+    overflow: hidden;
   }
 
   button {
@@ -112,8 +114,7 @@
     font-weight: 400;
     font-size: large;
     border-radius: 3rem;
-    outline: none;
-    overflow: hidden;
+    cursor: pointer;
   }
 
   
@@ -125,6 +126,10 @@
   }
   
   .tes input {
-    margin: 0rem 0.5rem 1rem 2rem;
+    margin: 0rem 0.5rem 1rem 2rem; 
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
   }
-  
