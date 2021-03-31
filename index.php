@@ -61,6 +61,7 @@
 
         <label for="courses">Pilih Jurusan</label>
         <select id="courses" name="student_courses">
+          <option class="option" disabled="disabled" selected="selected">--Pilih Jurusan--</option>
           <optgroup label="Teknik">
             <option value="Teknik Komputer">Teknik Komputer</option>
             <option value="teknik_elektro">Teknik Elektro</option>
