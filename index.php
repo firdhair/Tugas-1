@@ -30,9 +30,11 @@ $minat = getAllData('minat');
     <?php endif; ?>
   <?php endif; ?>
 
+
   <form action="" method="post">
     <div class="info-kamu">
       <h2>Info Kamu</h2>
+
 
       <label for="nama">Nama</label>
       <input type="text" id="nama" name="nama_mhs" required />
@@ -41,8 +43,16 @@ $minat = getAllData('minat');
       <input type="text" id="nim" name="nim_mhs" required />
 
       <label for="jenis-kelamin">Jenis Kelamin</label>
-      <input type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" />Pria
-      <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
+      <label class="radio">
+        <input class="radio-satu" type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" />
+        <span class="checkmark"></span>
+        Pria
+      </label>
+      <label class="radio">
+        <input class="radio-dua" type="radio" id="jenis-kelamin" name="jenis_kelamin" value="perempuan" />
+        <span class="checkmark"></span>
+        Perempuan
+      </label>
 
       <label for="email">Email</label>
       <input type="email" id="email" name="email_mhs" required />
@@ -58,6 +68,7 @@ $minat = getAllData('minat');
 
       <label for="courses">Pilih Jurusan</label>
       <select id="courses" name="student_courses">
+        <option class="option" disabled="disabled" selected="selected">--Pilih Jurusan--</option>
         <?php foreach ($fakultas as $f) : ?>
           <optgroup label="<?= $f['fakultas']; ?>">
             <?php $jurusan = getWhere('jurusan', 'kode_fakultas', $f['kode_fakultas']); ?>

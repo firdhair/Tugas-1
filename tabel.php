@@ -6,8 +6,13 @@ $minat = getAllData('minat');
 ?>
 <html>
 
+
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menampilkan Data</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -30,7 +35,7 @@ $minat = getAllData('minat');
         <th>Action</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="content">
       <?php foreach ($data as $mahasiswa) : ?>
         <?php
         $minatmhsarr = explode(',', $mahasiswa['id_minat']);
@@ -40,7 +45,8 @@ $minat = getAllData('minat');
         }
         $minatresult = implode(', ', $minatresult);
         ?>
-        <tr>
+
+        <tr class="active-row">
           <?php if (isset($_GET['id']) && $mahasiswa['id'] == $_GET['id']) : ?>
             <form action="" method="POST">
               <td><input type="text" id="nama" name="nama_mhs" value="<?= $mahasiswa['nama']; ?>" required></td>
@@ -93,12 +99,13 @@ $minat = getAllData('minat');
             <td><?= $mahasiswa['biografi']; ?></td>
             <td><?= $mahasiswa['jurusan']; ?></td>
             <td><?= $minatresult; ?></td>
-            <td>
+            <td class="tombol">
               <a href="tabel.php?id=<?= $mahasiswa['id']; ?>&action=edit"><button name="edit" class="edit"><i></i> Edit</button></a>
               <a href="crud.php?id=<?= $mahasiswa['id']; ?>&action=delete"><button name="edit" class="hapus-data" onclick="return confirm('Apakan anda yakin ingin menghapus file ini? File ini akan dihapus secara permanen.')"><i></i> Hapus</button></a>
             </td>
           <?php endif; ?>
         </tr>
+
       <?php endforeach; ?>
     </tbody>
   </table>
