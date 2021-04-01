@@ -19,12 +19,12 @@ $minat = getAllData('minat');
   <?php if (isset($_POST['submit'])) : ?>
     <?php if (addData($_POST) > 0) : ?>
       <script>
-        alert('berhasil');
+        alert('Terima kasih sudah mengisi form ini, data berhasil ditambahkan!');
         document.location.href = '';
       </script>
     <?php else : ?>
       <script>
-        alert('tidak berhasil');
+        alert('Ooops, data gagal ditambahkan');
         document.location.href = '';
       </script>
     <?php endif; ?>
