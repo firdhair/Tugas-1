@@ -1,207 +1,249 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-  }
-  
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-image: url(wallpaper.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-top: 40px;
-  }
-  
-  form {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0, 0.6);
-    color: #ffffff;
-    padding: 10px 0px 10px 0px;
-    min-height: 70vh;
-    max-width: 50%;
-    margin: auto;
-    border: none;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 15px 15px 0px 0px;
-  }
-  
-  h1 {
-    margin-left: 25px;
-    margin-top: 30px;
-    color: black;
-    font-size: 28px;
-    font-weight: 700;
-  }
-  h2 {
-    margin-left: 25px;
-    margin-top: 30px;
-    width: 125px;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .tambah-hapus {
-    position: relative;
-    margin: 2rem;
-    border: none;
-    color: white;
-    font-weight: 400;
-    font-size: large;
-    border-radius: 3rem;
-  }
+html {
+}
 
-  .tambah-hapus input {
-    margin-top: 10px;
-    margin-right: 20px;
-    border-radius: 3px;
-    background-color: rgb(0, 0, 0, 0.6);
-    color: #ffffff;
-    border: none;
-    font-weight: 700;
-    width: 125px;
-    cursor: pointer;
-    height: 30px;
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+}
 
-  .data-table {
-    border-collapse: collapse;
-    background-color: rgb(0, 0, 0, 0.6);
-    color: #ffffff;
-    padding: 10px 0px 10px 0px;
-    margin: 25px;
-    min-width: 400px;
-    border: none;
-    border-radius: 5px 5px 0px 0px; 
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
+form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  min-height: 70vh;
+  max-width: 50%;
+  margin: auto;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px 15px 0px 0px;
+}
 
-  .data-table thead tr {
-    border: none;
-    border-radius: 15px 15px 0px 0px; 
-    background-color: rgb(0, 0, 0, 0.6);
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-  }
+h1 {
+  margin-left: 25px;
+  margin-top: 30px;
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+}
+h2 {
+  margin-left: 25px;
+  margin-top: 30px;
+  width: 125px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
 
-  .data-table th, .data-table td {
-      padding: 12px 15px;
-  }
+.tambah-hapus {
+  position: relative;
+  margin: 2rem;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: large;
+  border-radius: 3rem;
+}
 
-  .data-table tbody tr {
-      border-bottom: 1px solid #dddd;
-  }
+.tambah-hapus input {
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  width: 125px;
+  cursor: pointer;
+  height: 30px;
+}
 
-  .data-table tbody tr:nth-of-type(even){
-      background-color: #f3f3f3;
-  }
+.data-table {
+  border-collapse: collapse;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  margin: 25px;
+  min-width: 400px;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
-  .data-table tbody tr:nth-last-of-type(even){
-      border-bottom: 2px solid #009879;
-  }
+.data-table thead tr {
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
 
-  .data-table tbody tr:active-row {
-      font-weight: bold;
-      color: #009879;
-  }
+.data-table th {
+  padding: 12px 15px;
+}
 
-  .info-kamu input {
-    margin: 0.5rem 2rem 0.5rem 2rem;
-    min-height: 2rem;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 1rem;
-    border-radius: 0.5rem;
-  }
-  
-  .info-kamu {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .info-kamu label {
-    margin: 0rem 2rem 0rem 2rem;
-    padding-top: 10px;
-  }
+.data-table td {
+  padding: 0px 12px;
+}
 
-  .radio {
-      display: inline-block;
-      padding-right: 70px;
-      font-family: "Montserrat", sans-serif;
-      margin-left: 25px;
-      margin-top: 15px;
-      color: white;
-  } 
-  
-  .profil-kamu {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .profil-kamu label {
-    margin: 0rem 2rem 0rem 2rem;
-    padding-top: 10px;
-  }
-  
-  .profil-kamu input {
-    margin: 0.5rem 2rem 0.5rem 2rem;
-    min-height: 2rem;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 1rem;
-    border-radius: 0.5rem;
-  }
-  
-  textarea {
-    margin: 0.5rem 2rem 1rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
-  }
-  
-  select {
-    margin: 0.5rem 2rem 1rem 2rem;
-    min-height: 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    padding-left: 1rem;
-    outline: none;
-    overflow: hidden;
-  }
+.data-table tbody tr {
+  border-bottom: 1px solid #dddd;
+}
 
-  button {
-    position: relative;
-    margin: 2rem;
-    border: none;
-    min-height: 2rem;
-    background-color: #ff0000;
-    color: white;
-    font-weight: 400;
-    font-size: large;
-    border-radius: 3rem;
-    cursor: pointer;
-  }
-  
-  .minat {
-    margin: 1rem 0rem 1rem 2rem;
-    border-radius: 3rem;
-    position: relative;
-    
-  }
-  
-  .tes input {
-    margin: 0rem 0.5rem 1rem 2rem; 
-    width: 50px;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-  }
+.data-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+  color: rgb(37, 37, 37);
+}
+
+.data-table tbody tr:nth-last-of-type(even) {
+  border-bottom: 2px solid #009879;
+}
+
+.data-table tbody tr:active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.info-kamu input {
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  min-height: 2rem;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+form.info_mhs input {
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  min-height: 2rem;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.info-kamu {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-kamu label {
+  margin: 0rem 2rem 0rem 2rem;
+  padding-top: 10px;
+}
+
+.radio {
+  display: inline-block;
+  padding-right: 70px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: white;
+}
+
+.profil-kamu {
+  display: flex;
+  flex-direction: column;
+}
+
+.profil-kamu label {
+  margin: 0rem 2rem 0rem 2rem;
+  padding-top: 10px;
+}
+
+.profil-kamu input {
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  min-height: 2rem;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  margin: 0.5rem 2rem 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+select {
+  margin: 0.5rem 2rem 1rem 2rem;
+  min-height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  outline: none;
+  overflow: hidden;
+}
+
+button {
+  position: relative;
+  margin: 2rem;
+  border: none;
+  min-height: 2rem;
+  background-color: #005194;
+  color: white;
+  font-weight: 400;
+  font-size: large;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button.edit,
+button.hapus-data,
+button.simpan,
+button.batal {
+  position: relative;
+  /* margin: 2rem; */
+  border: none;
+  /* min-height: 2rem; */
+  background-color: #005194;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 0.3rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.minat {
+  margin: 1rem 0rem 1rem 2rem;
+  border-radius: 3rem;
+  position: relative;
+}
+
+.tes input {
+  margin: 0rem 0.5rem 1rem 2rem;
+  width: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -19,7 +19,6 @@ $minat = getAllData('minat');
   <h1>Data Mahasiswa</h1>
   <div class="tambah-hapus">
     <a href="index.php"><input type="button" value="Tambah" class="tambah" name="tambah" /></a>
-    <input type="button" value="Hapus" class="hapus" name="hapus" />
   </div>
   <table class="data-table">
     <thead>
@@ -53,10 +52,10 @@ $minat = getAllData('minat');
               <td><input type="" id="nim" name="nim_mhs" value="<?= $mahasiswa['nim']; ?>" readonly></td>
               <td>
                 <?php if ($mahasiswa['jenis_kelamin'] == 'Perempuan') : ?>
-                  <input type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" />Pria
+                  <input type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" />Pria <br>
                   <input type="radio" name="jenis_kelamin" value="perempuan" checked />Perempuan
                 <?php else : ?>
-                  <input type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" checked />Pria
+                  <input type="radio" id="jenis-kelamin" name="jenis_kelamin" value="pria" checked />Pria <br>
                   <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
                 <?php endif; ?>
               </td>
@@ -101,7 +100,7 @@ $minat = getAllData('minat');
             <td><?= $minatresult; ?></td>
             <td class="tombol">
               <a href="tabel.php?id=<?= $mahasiswa['id']; ?>&action=edit"><button name="edit" class="edit"><i></i> Edit</button></a>
-              <a href="crud.php?id=<?= $mahasiswa['id']; ?>&action=delete"><button name="edit" class="hapus-data" onclick="return confirm('Apakan anda yakin ingin menghapus file ini? File ini akan dihapus secara permanen.')"><i></i> Hapus</button></a>
+              <a href="crud.php?id=<?= $mahasiswa['id']; ?>&action=delete"  onclick="return confirm('Apakan anda yakin ingin menghapus file ini? File ini akan dihapus secara permanen.')"><button name="edit" class="hapus-data"><i></i> Hapus</button></a>
             </td>
           <?php endif; ?>
         </tr>
